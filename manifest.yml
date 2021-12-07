@@ -27,3 +27,11 @@
 #   # Require the installation of other skills before installing this skill
 #   skill:
 #     - my-other-skill
+dependencies:
+  python:
+    - inflect
+    - pyradios
+    - word2number
+
+  system:
+    all: vlc
