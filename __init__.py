@@ -42,7 +42,7 @@ class InetRadio(CommonPlaySkill):
     @intent_file_handler('radio.inet.intent')
     def handle_radio_inet(self, message):
         self.speak_dialog('radio.inet')
-        matched_station = find_preset(message.data[type])
+        matched_station = find_preset(message.data["preset"])
         LOG.info(f"Playing from {matched_station[2]['url']}")
         self.CPS_play(matched_station[2]["url"])
 
