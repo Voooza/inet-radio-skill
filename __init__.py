@@ -21,7 +21,7 @@ def find_preset (phrase):
     for number in num:
         phrase = phrase.replace(number, str(w2n.word_to_num(number)))
     n = re.search("\d+", phrase).group()
-    return phrase, CPSMatchLevel.EXACT, {"url": stations [n]]}
+    return phrase, CPSMatchLevel.EXACT, {"url": stations [n]}
         
 
 class InetRadio(CommonPlaySkill):
